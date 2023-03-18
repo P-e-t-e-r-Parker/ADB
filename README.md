@@ -1,4 +1,22 @@
-![Postman](https://github.com/P-e-t-e-r-Parker/ADB/blob/main/acces/Logo.png)
+###### 1. Отобразить подключённый девайс в консоли. 
+     ./adb devices
+######  2. Вывести адрес приложения todolist в системе Android
+     ./adb shell 'pm list packages -f | grep todolist'
+###### 3. Установить .apk файл приложениия todolist на телефон с компьютера через  ADB 
+     ./adb install D:\26_QA\todolist.apk
+ ###### 4. Сделать скриншот запущенного приложения todolist и сразу скопировать на компьютер в одной команде.
+     ./adb shell  screencap/storage/emulated/0/DCIM/screen_26_QA.png | ./adb pull/storage/emulated/0/DCIM/screen_26_QA/png D:\adb\todolist\screen_26.png
+ ###### 5. Вывести в консоль логи приложения todolist
+     ./adb logcat -d | findstr -r todolist
+ ###### 6. Скопировать логи приложения todolist на компьютер.
+     ./adb logcat -d | findstr -r todolist > todolist_log.txt
+ ###### 7. Удалить приложение todolist с телефона через ADB
+     ./adb uninstall com.android.todolist
+
+
+
+
+
 
 ## 📫 Связаться со мной
 [![Telegram](https://img.shields.io/static/v1?style=for-the-badge&logo=telegram&message=telegram&label=&color=4165a3&labelColor=000000)](https://t.me/petrshelkunov)
