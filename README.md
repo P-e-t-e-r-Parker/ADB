@@ -9,7 +9,7 @@
  ###### :heavy_check_mark: 5. Вывести в консоль логи приложения todolist
      ./adb logcat -d | findstr -r todolist
  ###### :heavy_check_mark: 6. Скопировать логи приложения todolist на компьютер. 
-### <center> [Ссылка:todolist_log.txt](https://github.com/P-e-t-e-r-Parker/ADB/blob/main/todolist_log.txt)
+### <center> [Ссылка: todolist_log.txt](https://github.com/P-e-t-e-r-Parker/ADB/blob/main/todolist_log.txt)
      ./adb logcat -d | findstr -r todolist > todolist_log.txt
  ###### :heavy_check_mark: 7. Удалить приложение todolist с телефона через ADB
      ./adb uninstall com.android.todolist
